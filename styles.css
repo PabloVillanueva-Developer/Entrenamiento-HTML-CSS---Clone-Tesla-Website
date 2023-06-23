@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fuente1;
+    src: url(./assets/fonts/coolvetica.otf);
+}
+
+
+.body {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 10fr 0.01fr;
+width: 100vw;
+height: 100vh;
+font-family: fuente1;
+align-items: center;
+position: relative;
+color: aliceblue;
+}
+
+.body__section__background {
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+   
+    
+
+    
+}
+
+.body__section__background__video {
+   
+ 
+
+
+ 
+
+
+}
+
+
+.header__nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.header__nav__logo {
+    width: 10rem;
+}
+
+.header__nav__ul--central {
+    display: flex;
+    gap: 1.5rem;
+
+ 
+
+}
+
+
+.header__nav__ul--derecha {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header__nav__ul--central__a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.main__section--top {}
+
+.main__section__bottom {}
