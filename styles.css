@@ -41,6 +41,9 @@ color: aliceblue;
 .body__section__background {
     position: fixed;
     z-index: -10;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header {
@@ -77,12 +80,14 @@ body header nav ul a {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+    position: relative;
 }
 
 .header__nav__ul--central__a {
     text-decoration: none;
     color: aliceblue;
 }
+
 
 .main {
     display: grid;
@@ -146,3 +151,5 @@ body header nav ul a {
  
     }
 }
+
+
