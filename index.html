@@ -14,8 +14,8 @@
     <header class="header" >
             <!--MENU HAMBURGUESA  -->
         <nav header__navHamb>
-            <ul class="header__navHamb__ul">
-                <svg class="hola" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.53 17.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.748.748 0 0 1-1.06 0 .75.75 0 0 1 0-1.06L10.94 12 5.47 6.53a.75.75 0 1 1 1.06-1.06L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47z" fill="currentColor"></path></svg>
+            <ul id="menuHamb" class="header__navHamb__ul">
+                <a id ="cierreX" class="cierreX" href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.53 17.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.748.748 0 0 1-1.06 0 .75.75 0 0 1 0-1.06L10.94 12 5.47 6.53a.75.75 0 1 1 1.06-1.06L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47z" fill="currentColor"></path></svg></a>
                 <a class="header__navHamb__ul__a" href="#" class="">Model S</a>
                 <a class="header__navHamb__ul__a" href="#" class="">Model 3</a>
                 <a class="header__navHamb__ul__a" href="#" class="">Model X</a>
@@ -64,7 +64,7 @@
             <ul class="header__nav__ul--derecha"> <!-- MENU DERECHA -->
                 <a href="#" class="header__nav__ul--central__a">Shop</a>
                 <a href="#" class="header__nav__ul--central__a">Account</a>
-                <a href="#" class="header__nav__ul--central__a header__nav__ul--central__a--menuHamb">Menu</a>
+                <a id="buttonMenu" href="#" class="header__nav__ul--central__a header__nav__ul--central__a--menuHamb">Menu</a>
                 
             </ul>
         </nav>
@@ -93,9 +93,13 @@
         <video class="body__section__background__video" autoplay muted loop src="./assets/videos/video1.webm" ></video>
     </section>
 
-    
+    <script src="main.js"></script>
 </body>
 </html>
 
-<!-- MENU HAMBURGUESA -->GIT 
-<!-- AGREGAR IMAGENS HACIA ABAJO Y EFECTOS DE MENU-->
+<!-- MENU HAMBURGUESA - HABRIA QUE DARLE EL EFECTO DE TRANSICION, PARA ESO HAY QUE LOGRAR
+QUE EL MENU ESTE DENTRO DE UN CONTENEDOR BIEN ANGOSTO CON OVERFLOW. POR AHORA FUNCIONA
+CON HIDDEN. ENTIENDO QUE HAY QUE AJUSTAR EL CONTENEDOR ANTERIOR TAL VEZ CON GRID Y RECIEN
+AHI SE PUEDE LOGRAR EL EFECTO -->
+<!-- AGREGAR IMAGENS HACIA ABAJO Y EFECTOS DE MENU CON CAMBIO DE COLOR-->
+Y LISTO TERMINADO!
