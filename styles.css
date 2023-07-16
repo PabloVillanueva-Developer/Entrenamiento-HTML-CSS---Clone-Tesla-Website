@@ -53,6 +53,8 @@ color: aliceblue;
 body header nav ul a {
     font-family: fuente3;
     font-size: 0.9rem;
+    text-decoration: none;
+
 }
 
 .header__nav {
@@ -88,6 +90,40 @@ body header nav ul a {
     color: aliceblue;
 }
 
+.header__navHamb {
+
+  
+}
+
+.header__navHamb__ul {
+    background-color: aliceblue;
+    width: 18rem ;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    right: 0rem;
+    top: 0;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    height:100vh ;
+
+}
+
+.hola {
+    align-self: end;
+    color:rgb(0, 0, 0);
+    width: 1.5rem;
+    margin-right: 2rem;
+    
+}
+
+.header__navHamb__ul__a {
+    text-decoration: none;
+    color: black;
+ 
+
+}
 
 .main {
     display: grid;
