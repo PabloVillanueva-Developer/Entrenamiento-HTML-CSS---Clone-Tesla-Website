@@ -34,27 +34,16 @@ width: 100vw;
 height: 100vh;
 font-family: fuente1;
 align-items: center;
-
 position: relative;
 color: aliceblue;
-
-
-
-
 }
-
-
 
 .body__section__background {
     position: fixed;
-    z-index: -10;
-    width: 100vw;  
+    z-index: -10;  
 }
 
-
-
 .header {
-
    align-self: center;
 }
 
@@ -63,22 +52,16 @@ body header nav ul a {
     font-size: 0.9rem;
 }
 
-
-
 .header__nav {
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.8fr;
     grid-template-rows: 1fr;
     align-items: center;
-
-
 }
 
 .header__nav__div {
     padding-left: 2rem;
 }
-
-
 
 .header__nav__div__logo {
     width: 10rem;
@@ -88,18 +71,12 @@ body header nav ul a {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
-
- 
-
 }
-
 
 .header__nav__ul--derecha {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
-
- 
 }
 
 .header__nav__ul--central__a {
@@ -115,7 +92,6 @@ body header nav ul a {
 
 .main__section--top {
     justify-self: center;
-
 }
 
 .main__section--top__h1 {
@@ -134,35 +110,37 @@ body header nav ul a {
 .main__section__bottom {
     justify-self: center;
     padding-top: 2.7rem;
-
 }
 
 .main__section__bottom__p {
-
     text-decoration: none;
     color: aliceblue;
     border: 3px solid aliceblue;
     padding: 0.5rem 7rem;
     border-radius: 0.5rem;
     transition: all 1s linear;
-    
- 
 }
 
 
 .main__section__bottom__p:hover {
     background-color: aliceblue;
     color: black;
-    
 }
 
 @media (max-width: 1200px) {
- .header__nav {
+ .header__nav__ul--central__a {
     display: none;
  }
+ .header__nav__ul--central__a--menuHamb {
+    display: grid;
+    margin-right: 10%;
+ } 
+
+ 
+
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
     .body__section__background__video {
       width: 100vw;
  
