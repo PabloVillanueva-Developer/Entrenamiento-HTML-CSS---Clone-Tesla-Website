@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+}
+
+.div1 {
+    scroll-snap-align: center;
+    
+
+}
+.div2 {
+    scroll-snap-align: center;
+}
+
+ 
+.div3 {
+    scroll-snap-align: center;
+}
+
+.img {
+    height: 100vh;  
+}
