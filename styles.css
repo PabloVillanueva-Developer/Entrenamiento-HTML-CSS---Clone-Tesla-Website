@@ -26,7 +26,21 @@
 
 
 
+
 .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+
+}
+
+
+
+
+.section__pag1 {
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: 1.8fr 12fr;
@@ -36,7 +50,9 @@ font-family: fuente1;
 align-items: center;
 position: relative;
 color: aliceblue;
+
 }
+
 
 .body__section__background {
     position: fixed;
@@ -55,8 +71,14 @@ body header nav ul a {
 
 }
 
+header {
+    position: sticky;
+    top: 1.5rem;
+}
+
 
 .header__nav {
+
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.8fr;
     grid-template-rows: 1fr;
@@ -71,6 +93,7 @@ body header nav ul a {
 
 .header__nav__div__logo {
     width: 10rem;
+    fill: aliceblue;
 }
 
 .header__nav__ul--central {
@@ -216,6 +239,33 @@ body header nav ul a {
     background-color: aliceblue;
     color: black;
 }
+
+.section__pag2 {
+    background-image: url(./assets/img/Model3.avif);
+     background-size: cover;
+     background-repeat: none;
+     height: 100%;
+     width: 100%;
+
+
+}
+
+.section__pag3 {
+    background-image: url(./assets/img/ModelY.avif);
+     background-size: cover;
+     background-repeat: none;
+     background-position: center;
+
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+}
+
+.snap{
+    scroll-snap-align: center;
+}
+
 
 
 
