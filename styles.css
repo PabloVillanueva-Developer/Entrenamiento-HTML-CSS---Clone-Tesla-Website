@@ -246,6 +246,7 @@ header {
     background-image: url(./assets/img/Model3.avif);
      background-size: cover;
      background-repeat: none;
+     background-position: center;
      height: 100%;
      width: 100%;
 
