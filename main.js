@@ -26,3 +26,6 @@ menuHamb.style.display = 'none'
 },1000)
 videoDesenfoque.style.filter = 'blur(0)'
 });
+
+
+

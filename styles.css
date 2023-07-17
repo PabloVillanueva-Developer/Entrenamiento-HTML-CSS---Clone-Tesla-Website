@@ -60,7 +60,8 @@ body header nav ul a {
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.8fr;
     grid-template-rows: 1fr;
-    align-items: center;
+    align-items: end;
+ 
 }
 
 .header__nav__div {
@@ -76,6 +77,8 @@ body header nav ul a {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+    overflow: hideen;
+    display: relative;
 }
 
 .header__nav__ul--derecha {
@@ -90,6 +93,7 @@ body header nav ul a {
     text-decoration: none;
     color: aliceblue;
     font-family: fuente2;
+    font-weight: bold;
 }
 
 
@@ -168,16 +172,18 @@ body header nav ul a {
 .main {
     display: grid;
     grid-template-columns: 5fr 0.01fr;
-    grid-template-rows: 1.3fr 3fr 1fr;
+    grid-template-rows: 4fr 2fr 1fr;
 }
 
 .main__section--top {
     justify-self: center;
+    
+    
 }
 
 .main__section--top__h1 {
         text-align: center;
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-family: fuente2;
 
 }
@@ -190,9 +196,10 @@ body header nav ul a {
 }
 
 .main__section__bottom {
+    margin-bottom: 3rem;
     align-self: end;
     justify-self: center;
-    padding-top: 2.7rem;
+ 
 }
 
 .main__section__bottom__p {
@@ -210,7 +217,14 @@ body header nav ul a {
     color: black;
 }
 
+
+
 @media (max-width: 1200px) {
+
+    .header {
+        
+    }
+
  .header__nav__ul--central__a {
     display: none;
  }
