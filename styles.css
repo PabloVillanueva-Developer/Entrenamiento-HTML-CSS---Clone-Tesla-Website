@@ -195,7 +195,7 @@ header {
 .main {
     display: grid;
     grid-template-columns: 5fr 0.01fr;
-    grid-template-rows: 4fr 2fr 1fr;
+    grid-template-rows: 4fr 2fr 7fr;
 }
 
 .main__section--top {
@@ -208,6 +208,7 @@ header {
         text-align: center;
         font-size: 2.5rem;
         font-family: fuente2;
+        margin-top: 5rem;
 
 }
 
@@ -219,7 +220,7 @@ header {
 }
 
 .main__section__bottom {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     align-self: end;
     justify-self: center;
  
@@ -232,6 +233,7 @@ header {
     padding: 0.5rem 7rem;
     border-radius: 0.5rem;
     transition: all 1s linear;
+    
 }
 
 
@@ -260,9 +262,12 @@ header {
 
 .container {
     scroll-snap-type: y mandatory;
+    height: 100%;
+    width: 100%;
+
 }
 
-.snap{
+.slide{
     scroll-snap-align: center;
 }
 
