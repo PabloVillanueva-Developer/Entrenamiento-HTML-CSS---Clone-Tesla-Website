@@ -23,16 +23,14 @@
     src: url(./assets/fonts/Tesla.woff2);
 }
 
-
-
-
-
 .body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.15fr 1fr 1fr;
+    grid-template-rows: 0.01fr 1fr 0.5fr;
     height: 100vh;
     width: 100vw;
+    padding-top: -1px;
+
 
 }
 
@@ -59,7 +57,8 @@ body header nav ul a {
 }
 
 .header {
-    position: sticky;
+    position: absolute;
+    width: 100vw;
     top: 1.5rem;
     z-index: 20;
 }
@@ -110,6 +109,7 @@ body header nav ul a {
 
 .header__section__navHamb {
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -117,7 +117,6 @@ body header nav ul a {
     width: 1px;
     overflow: hidden; 
     position: relative;
-
 }
 
 
@@ -146,7 +145,7 @@ body header nav ul a {
 .header__navHamb__ul--b {
     background-color: aliceblue;
     width: 18rem ;
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -154,13 +153,13 @@ body header nav ul a {
     top: 0;
     padding-left: 2rem;
     padding-top: 2rem;
-    height:100vh ;
+    height:100%;
     opacity: 100%;
     translate: 0;
     transition: all 0.5s ease-in-out;
     z-index: 2;
     overflow-y: scroll;
-    z-index: 2000;
+    z-index: 100;
    
 
    
@@ -186,14 +185,12 @@ body header nav ul a {
 .main {
     display: grid;
     grid-template-columns: 5fr;
-    grid-template-rows: 4fr 2fr 7fr;
+    grid-template-rows: 4fr 2fr 4fr;
     z-index: 10;
 }
 
 .main__section--top {
-    justify-self: center;
-    
-    
+    justify-self: center;   
 }
 
 .main__section--top__h1 {
@@ -244,7 +241,7 @@ body header nav ul a {
     align-items: center;
     position: relative;
     color: aliceblue;
-    scroll-snap-align: center;
+    scroll-snap-align: end;
     
     }
 
@@ -255,7 +252,7 @@ body header nav ul a {
      background-position: center;
      height: 100vh;
 
-     scroll-snap-align: center;
+     scroll-snap-align: end;
 
 
 }
@@ -266,7 +263,7 @@ body header nav ul a {
      background-repeat: none;
      background-position: center;
      height: 100vh;
-     scroll-snap-align: center;
+     scroll-snap-align: end;
 
 }
 
@@ -274,7 +271,7 @@ body header nav ul a {
     scroll-snap-type: y mandatory;
     height: 100vh;
     width: 100vw;
-    overflow: auto;
+    overflow-x: hidden;
 
 }
 
