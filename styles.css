@@ -235,16 +235,18 @@ body header nav ul a {
 
 .main__section--model__container {
     justify-self: center;
-     
+    width: 100%;
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
 }
 
 .main__section--model__buttons--izq {
    
     background-color: rgb(208, 208, 208);
     height: 2.5rem;
+    width: 20rem;
     text-decoration: none;
     color: black;
     
@@ -260,6 +262,7 @@ body header nav ul a {
    
     background-color: rgb(54, 51, 51);
     height: 2.5rem;
+    width: 20rem;
     text-decoration: none;
     color: aliceblue;
     
@@ -269,6 +272,7 @@ body header nav ul a {
     font-family: fuente2;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .section__pag1 {
@@ -309,7 +313,7 @@ body header nav ul a {
      scroll-snap-align: end;
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 0.5fr 3fr 0.5fr;
+     grid-template-rows: 1fr 3fr 2fr;
 
 }
 
@@ -348,6 +352,12 @@ body header nav ul a {
     }
 }
 
+@media (max-width: 650px) {
+    .main__section--model__container {
+      flex-direction: column;
+ 
+    }
+}
 
 
 
