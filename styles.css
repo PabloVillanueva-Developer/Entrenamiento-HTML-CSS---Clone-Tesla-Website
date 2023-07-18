@@ -30,14 +30,7 @@
     height: 100vh;
     width: 100vw;
     padding-top: -1px;
-
-
 }
-
-
-
-
-
 
 
 .body__section__background {
@@ -65,7 +58,6 @@ body header nav ul a {
 
 
 .header__nav {
-
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.8fr;
     grid-template-rows: 1fr;
