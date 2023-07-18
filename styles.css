@@ -32,21 +32,64 @@
     padding-top: -1px;
 }
 
-
-.body__section__background {
-    position: fixed;
-    z-index: -10;  
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: blur(0px);
+.header__section__navHamb {
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+.header__navHamb {
+    width: 1px;
+    overflow: hidden; 
+    position: relative;
 }
 
+.header__navHamb__ul {
+    background-color: aliceblue;
+    width: 0.01px ; 
+    position: absolute;
+    flex-direction: column;
+    gap: 2rem;
+    right: 0;
+    top: 0;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    height:100%;
+    opacity: 0%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
 
-body header nav ul a {
-    font-family: fuente3;
-    font-size: 0.9rem;
+.cierreX {
+    align-self: end;
+    color:rgb(0, 0, 0);
+    width: 1.5rem;
+    margin-right: 2rem; 
+}
+
+.header__navHamb__ul--b {
+    background-color: aliceblue;
+    width: 18rem ;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    right: 0rem;
+    top: 0;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    height:100%;
+    opacity: 100%;
+    translate: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    overflow-y: scroll;
+    z-index: 100;  
+}
+
+.header__navHamb__ul__a {
     text-decoration: none;
+    color: rgb(81, 89, 81);
 }
 
 .header {
@@ -56,18 +99,15 @@ body header nav ul a {
     z-index: 20;
 }
 
-
 .header__nav {
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.8fr;
     grid-template-rows: 1fr;
     align-items: end;
- 
 }
 
 .header__nav__div {
     padding-left: 2rem;
-  
 }
 
 .header__nav__div__logo {
@@ -88,7 +128,6 @@ body header nav ul a {
     gap: 1.5rem;
     justify-content: center;
     position: relative;
-  
 }
 
 .header__nav__ul--central__a {
@@ -98,83 +137,27 @@ body header nav ul a {
     font-weight: bold;
 }
 
+.section__container {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
 
-.header__section__navHamb {
-    overflow: hidden;
+.section__pag1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.8fr 12fr;
+    width: 100vw;
+    height: 100vh;
+    font-family: fuente1;
+    align-items: center;
     position: relative;
-    z-index: 100;
-}
+    color: aliceblue;
+    scroll-snap-align: end;
+    }
 
-
-.header__navHamb {
-    width: 1px;
-    overflow: hidden; 
-    position: relative;
-}
-
-
-
-.header__navHamb__ul {
-    background-color: aliceblue;
-    width: 0.01px ; 
-    position: absolute;
-    flex-direction: column;
-    gap: 2rem;
-    right: 0;
-    top: 0;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    height:100%;
-    opacity: 0%;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-    display: none;
-   
-
-
-
-}
-
-.header__navHamb__ul--b {
-    background-color: aliceblue;
-    width: 18rem ;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    right: 0rem;
-    top: 0;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    height:100%;
-    opacity: 100%;
-    translate: 0;
-    transition: all 0.5s ease-in-out;
-    z-index: 2;
-    overflow-y: scroll;
-    z-index: 100;
-   
-
-   
-}
-
-.cierreX {
-    align-self: end;
-    color:rgb(0, 0, 0);
-    width: 1.5rem;
-    margin-right: 2rem;
     
-}
-
-
-
-.header__navHamb__ul__a {
-    text-decoration: none;
-    color: rgb(81, 89, 81);
- 
-
-}
-
 .main {
     display: grid;
     grid-template-columns: 5fr;
@@ -191,7 +174,6 @@ body header nav ul a {
         font-size: 2.5rem;
         font-family: fuente2;
         margin-top: 5rem;
-
 }
 
 .main__section--top__p {
@@ -201,21 +183,10 @@ body header nav ul a {
     margin-top: 1rem;
 }
 
-.main__section--model__h1 {
-    font-family: fuente2;
-    justify-self: center;
-    font-size: 2.5rem;
-    color: rgb(41, 38, 38);
-
-}
-
-
-
 .main__section__bottom {
     margin-bottom: 2rem;
     align-self: end;
     justify-self: center;
- 
 }
 
 .main__section__bottom__p {
@@ -225,14 +196,42 @@ body header nav ul a {
     padding: 0.5rem 7rem;
     border-radius: 0.5rem;
     transition: all 1s linear;
-    
 }
-
 
 .main__section__bottom__p:hover {
     background-color: aliceblue;
     color: black;
 }
+
+.body__section__background {
+    position: fixed;
+    z-index: -10;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(0px);
+}
+
+
+.section__pag2 {
+    background-image: url(./assets/img/Model3.avif);
+     background-size: cover;
+     background-repeat: none;
+     background-position: center;
+     height: 100vh;
+     scroll-snap-align: end;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+
+.main__section--model__h1 {
+    font-family: fuente2;
+    justify-self: center;
+    font-size: 2.5rem;
+    color: rgb(41, 38, 38);
+}
+
 
 .main__section--model__container {
     justify-self: center;
@@ -244,13 +243,11 @@ body header nav ul a {
 }
 
 .main__section--model__buttons--izq {
-   
     background-color: rgb(208, 208, 208);
     height: 2.5rem;
     width: 20rem;
     text-decoration: none;
     color: black;
-    
     padding: 0.5rem 5rem;
     border-radius: 0.5rem;
     transition: all 1s linear;
@@ -260,13 +257,11 @@ body header nav ul a {
 }
 
 .main__section--model__buttons--der {
-   
     background-color: rgb(54, 51, 51);
     height: 2.5rem;
     width: 20rem;
     text-decoration: none;
     color: aliceblue;
-    
     padding: 0.5rem 5rem;
     border-radius: 0.5rem;
     transition: all 1s linear;
@@ -274,35 +269,6 @@ body header nav ul a {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.section__pag1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.8fr 12fr;
-    width: 100vw;
-    height: 100vh;
-    font-family: fuente1;
-    align-items: center;
-    position: relative;
-    color: aliceblue;
-    scroll-snap-align: end;
-    
-    }
-
-.section__pag2 {
-    background-image: url(./assets/img/Model3.avif);
-     background-size: cover;
-     background-repeat: none;
-     background-position: center;
-     height: 100vh;
-
-     scroll-snap-align: end;
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 0.5fr 1fr 0.5fr;
-
-
 }
 
 .section__pag3 {
@@ -315,24 +281,9 @@ body header nav ul a {
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: 1fr 3fr 2fr;
-
 }
-
-.section__container {
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-
-}
-
-
-
-
 
 @media (max-width: 1200px) {
-
-   
 
  .header__nav__ul--central__a {
     display: none;
@@ -341,15 +292,11 @@ body header nav ul a {
     display: grid;
     margin-right: 10%;
  } 
-
- 
-
 }
 
 @media (min-width: 1900px) {
     .body__section__background__video {
       width: 100vw;
- 
     }
 }
 
